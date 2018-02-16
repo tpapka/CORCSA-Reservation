@@ -39,7 +39,7 @@ def check_date_avaialbility():
     check_date_avaialbility()
 
 def form_data():
-    print("Filling up the form...")
+    print("Filling up form...")
     WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.ID, "cphBody_txbFirstName"))).send_keys(first_name)
     browser.find_element_by_id("cphBody_txbLastName").send_keys(last_name)
     browser.find_element_by_id("cphBody_txbYOB").send_keys(yob)
